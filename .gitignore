@@ -1,0 +1,19 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- Data & Models (Fichiers volumineux) ---
+*.csv
+*.joblib
+*.pkl
+
+# --- OS spécifiques ---
+.DS_Store
+Thumbs.db
