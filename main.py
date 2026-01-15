@@ -50,3 +50,9 @@ def predict_daily(data: Input):
         "price_wei": int(price_wei),
         "price_eth": round(price_wei / 10**18, 4)
     }
+
+
+if __name__ == "__main__":
+    import uvicorn
+    # Le port 8000 correspond à celui exposé dans votre Dockerfile
+    uvicorn.run(app, host="0.0.0.0", port=8000)
