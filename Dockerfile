@@ -1,5 +1,5 @@
 # Image Python légère
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -16,8 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # AJOUT CRUCIAL : Résolution des imports pour les dossiers daily/ et monthly/
-ENV PYTHONPATH="${PYTHONPATH}:/app"
-
+ENV PYTHONPATH="/app"
 # Exposition du port standard FastAPI
 EXPOSE 8000
 
