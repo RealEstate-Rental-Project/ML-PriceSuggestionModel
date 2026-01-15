@@ -9,7 +9,7 @@ mlModelPipeline(
         [name: 'daily/preprocessor_daily.joblib', targetDir: 'daily'],
         
         // Modèles pour les prédictions mensuelles (Monthly)
-        [name: 'monthly/property_price_model.joblib', targetDir: 'monthly'],
-        [name: 'monthly/preprocessor.joblib', targetDir: 'monthly']
+        [name: 'monthly/property_price_model.joblib', targetDir: '.'],
+        [name: 'monthly/preprocessor.joblib', targetDir: '.']
     ]
 )
